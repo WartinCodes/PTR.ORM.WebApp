@@ -35,7 +35,10 @@ ScaffoldingReadMe.txt
 *.nupkg
 # NuGet Symbol Packages
 *.snupkg
-
+.vs/
+/.vs
+*.csproj.user
+.idea/.idea.PTR.ORM.WebApp
 # Others
 ~$*
 *~
