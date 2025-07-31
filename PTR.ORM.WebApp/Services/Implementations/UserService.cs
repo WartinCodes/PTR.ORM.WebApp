@@ -32,7 +32,7 @@ public class UserService(IMapper mapper, IUserRepository userRepository) : IUser
 
     public void DeleteUser(int id)
     {
-        _userRepository.DeleteUser(id);
+        _userRepository.Delete(id);
     }
 
     public IEnumerable<UserResponseDto> GetAll()

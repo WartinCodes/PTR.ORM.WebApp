@@ -11,7 +11,6 @@ namespace PTR.ORM.WebApp.Profiles
         {
             CreateMap<CreateProductRequestDto, Product>();
             CreateMap<Product, ProductResponseDto>();
-            // UPDATE
         }
     }
 }
