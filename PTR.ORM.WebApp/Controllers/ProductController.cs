@@ -1,10 +1,12 @@
 ﻿using PTR.ORM.WebApp.Models.Dtos.Requests;
 using PTR.ORM.WebApp.Services.Interfaces;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Authorization;
 
 namespace PTR.ORM.WebApp.Controllers
 {
     [Route("api/[controller]")]
+    [AllowAnonymous]
     [ApiController]
     public class ProductController(IProductService productService) : ControllerBase
     {

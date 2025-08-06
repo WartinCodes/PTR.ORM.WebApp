@@ -14,7 +14,7 @@ public class ProductService(IProductRepository productRepository, IMapper mapper
 
     public ProductResponseDto Create(CreateProductRequestDto request)
     {
-        Product product = _mapper.Map<Product>(request);
+        Product product = _mapper.Map<Product>(request); 
         Product createdProduct = _productRepository.Create(product);
         return _mapper.Map<ProductResponseDto>(createdProduct);
     }
@@ -37,7 +37,7 @@ public class ProductService(IProductRepository productRepository, IMapper mapper
 
     public ProductResponseDto GetByProductId(int productId)
     {
-        Product? product = _productRepository.GetByProductId(productId);
+        Product? product = _productRepository.GetById(productId);
         return _mapper.Map<ProductResponseDto>(product);
     }
 

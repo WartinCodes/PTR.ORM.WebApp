@@ -2,12 +2,8 @@
 
 namespace PTR.ORM.WebApp.Repositories.Interfaces
 {
-    public interface IProductRepository
+    public interface IProductRepository : IRepository<Product>
     {
-        IEnumerable<Product> GetAll();
         IEnumerable<Product> GetAllByUserId(int userId);
-        Product? GetByProductId(int productId);
-        Product Create(Product product);
-        void Delete(int id);
     }
 }
